@@ -1,0 +1,131 @@
+section {
+  background-color: yellow;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  background-color: goldenrod;
+}
+.flex-container > form > div {
+  flex-wrap: wrap;
+  background-color: rgb(220, 214, 175);
+}
+.flex-container > form > select:hover {
+  background-color: blue;
+}
+p:hover {
+  position: relative;
+  background-color: rgb(219, 151, 230);
+}
+/* mobile view */
+@media screen (max-width: 480px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 50%;
+  }
+}
+/* tablet view */
+@media screen (min-width: 480px) and (max-width 1024px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 75%;
+  }
+}
+/* desktop view*/
+@media screen (min-width: 1024px) and (max-width: 1680px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
+  }
+}
+
+.square {
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+}
+
+.square-hollow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border: solid 50px red;
+  border-color: transparent transparent transparent black transparent;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  z-index: 1;
+}
+
+h4 {
+  position: absolute;
+  left: -30px;
+  top: 95px;
+}
+
+.up-triangle {
+  width: 0;
+  height: 0;
+  border: solid 30px red;
+  border-color: transparent transparent black transparent;
+}
+
+.up-triangle-mirror {
+  width: 0;
+  height: 0;
+  border: solid 30px red;
+  border-color: goldenrod transparent transparent;
+}
+
+.down-triangle {
+  width: 0;
+  height: 0;
+  border: solid 30px red;
+  border-color: goldenrod transparent transparent transparent;
+}
+
+.down-triangle-space {
+  width: 50%;
+  height: 50%;
+  border: solid 30px red;
+  border-color: transparent transparent black transparent;
+}
+
+.side-triangle-mirror {
+  width: 25%;
+  height: 25%;
+  border: solid 30px red;
+  border-color: transparent green transparent;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+}
+
+.oval {
+  height: 500px;
+  width: 100px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+}
+
+.rectangle {
+  height: 100px;
+  width: 200px;
+  background-color: black;
+}
